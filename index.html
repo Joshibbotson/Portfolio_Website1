@@ -6,19 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" class="style">
+    <link>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Rowdies:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
+    
+            <div class="hiddenLogo">Science-Bio</div>
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle" class="toggle"/>
+        
         <div class="nav-bar">
-            <li class="leftNav">Science.CO</li>
-            <li>Markets</li>
-            <li>Convert</li>
-            <li>Trade</li>
-            <li>CEX</li>
-            <li>DEX</li>
-            <li class="rightNav">Eng</li>
+            <li class="leftNav">Science-Bio</li>
+
+            <li><a href="#" class="left">Markets</a></li>
+            <li><a href="#" class="left">Convert</a></li>
+            <li><a href="#" class="left">Trade</a></li>
+            <li><a href="#" class="left">CEX</a></li>
+            <li><a href="#" class="left">DEX</a></li>
+            <input class="searchInput" type="text" id="search"/>
+            <button for="search">Search</button>
+
+            <div class="dropdown">
+            <li class="rightNav-dropdown">🇬🇧 Eng</li>
+               <div class="dropdown-content">
+                    <li class="dropdown-link">🇬🇧 Eng</li>
+                    <li class="dropdown-link">🇪🇸 Spa</li>
+                    <li class="dropdown-link">🇯🇵 Jap</li>
+                    <li class="dropdown-link">🇷🇺 Rus</li>
+                    <li class="dropdown-link">🇩🇪 Ger</li>
+                </div>
+            </div>
+            
             <button class="rightNav">Sign up</button>
-            <button class = "rightNav">Log in</button>
+            <button class="rightNav">Log in</button>
+    
         </div>
     </header>
 </body>
