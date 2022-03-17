@@ -9,12 +9,15 @@
     --main-bg: url("https://wallpaperaccess.com/full/686946.jpg");
 
     --main-font-colour:#fff ;
+    --secondary-font-colour:rgb(190, 190, 190);
     --main-font-family: 'Roboto', sans-serif;
 
     --link-font-size: clamp(1rem, 2.5vw, 1.3rem); 
     --link-font-weight: 300;
     --logo-font-size: 1.8em;
     --logo-font-weight: 600;
+    --title-font-size: clamp(7em, 6.5em, 8.5em);
+    --title-font-weight: 800;
 
     --link-text-color-hover: #000;
     --link-background-color-hover: #fff;
@@ -245,7 +248,8 @@ button.rightNav:focus {
         flex-direction: column;
 
         margin-left: -200%;
-        transition: margin-left 1s, backdrop-filter 1s;
+        margin-bottom: -35rem;
+        
        
     }
 
@@ -265,6 +269,157 @@ button.rightNav:focus {
 
     #toggle:checked ~ .nav-bar {
         margin-left: 0;
-        backdrop-filter: blur(5px);
+        backdrop-filter: contrast(80%) blur(2px);
+        transition: margin-left 0.6s, margin-bottom 0.5s, backdrop-filter 1s;
+        padding-bottom: 2.5rem;
+        padding-top: 2.5rem;
+        margin-bottom: 0rem;
+    }
+
+
+    /* 2.0 head section */
+    .image-container {
+        margin-top: -0%;
+        flex-direction: column;
+    }
+        .header-image1 {
+        background-image: url("https://placeimg.com/640/480/tech?t=1647198714527");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        padding: 25%;
+    }
+    .header-image2 {
+        background-image: url("https://placeimg.com/640/480/nature?t=1647194987815");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        padding: 25%;
+    }
+    
+    .header-image3 {
+        background-image: url("https://placeimg.com/640/480/arch");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+        padding: 25%;
+    }
+    
+    .header-image4 {
+        background-image: url("https://placeimg.com/640/480/tech?t=1647198701415");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        padding: 25%;
     }
 }
+/* media screen ENDS */
+
+
+/* header text/main image */
+/* left hand side of header */
+.header-section {
+    display: flex;
+    margin: 10rem 5rem 0rem 5rem;
+}
+
+.left-container {
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-shrink: 2;
+}
+
+.header-mini-container {
+    display: flex;
+    align-items: center;
+
+    margin-top: 5rem;
+}
+.get-started {
+    font-size:var(--logo-font-size);
+}
+
+.get-started-arrowIMG {
+    filter: invert(1);
+}
+
+.header-title {
+    color: var(--main-font-colour);
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.header-text {
+    display: flex;
+    max-width: 60ch;
+    color: var(--secondary-font-colour);
+    
+}
+
+.main-image {
+    margin-top: -5.5rem;
+    filter: saturate(0) brightness(110%);
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+
+/* 3.0 main body */
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        margin: 5rem;
+        gap: 1rem;
+        flex-grow: 0;
+        flex-wrap: wrap;
+    }
+    
+    .body-image1 {
+        background-image: url("https://placeimg.com/640/480/tech?t=1647198714527");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        padding: 7.5rem 10rem;
+    }
+    .body-image2 {
+        background-image: url("https://placeimg.com/640/480/nature?t=1647194987815");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        padding: 7.5rem 10rem;
+    }
+    
+    .body-image3 {
+        background-image: url("https://placeimg.com/640/480/arch");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+        padding: 7.5rem 10rem;
+    }
+    
+    .body-image4 {
+        background-image: url("https://placeimg.com/640/480/tech?t=1647198701415");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        padding: 7.5rem 10rem;
+    }
+
+    
